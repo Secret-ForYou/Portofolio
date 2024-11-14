@@ -7,11 +7,11 @@ import '../styles/Home.css';
 import image from '../images/profile.webp';
 import { FiDownload } from 'react-icons/fi';
 import MenuMobile from "../components/MenuMobile";
-import Typical from 'react-typed';
+import { ReactTyped } from 'react-typed';  // Pastikan ini menggunakan ekspor bernama
 
 function Home() {
   return (
-    <body>
+    <div>
       <TitleBar />
       <section className="flex-container">
         <SideBar />
@@ -22,7 +22,7 @@ function Home() {
             <div className="home-content">
               <p><span className="span">{'<'}</span>Hello 👋, I'm</p>
               <h1>David Morris <span className="span">{'/>'}</span></h1>
-              <Typical
+              <ReactTyped  // Gunakan ReactTyped dengan benar
                 steps={['Full-Stack Developer', 1000, 'Web Development Student', 1000, 'Mobile Development Student', 1000]}
                 loop={Infinity}
                 wrapper="h2"
@@ -47,10 +47,9 @@ function Home() {
 
           </main>
         </section>
-        {/* <SideBar /> */}
       </section>
       <Footer />
-    </body>
+    </div>
   );
 }
 
