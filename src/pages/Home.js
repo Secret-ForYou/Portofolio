@@ -7,7 +7,7 @@ import '../styles/Home.css';
 import image from '../images/profile.webp';
 import { FiDownload } from 'react-icons/fi';
 import MenuMobile from "../components/MenuMobile";
-import Typical from 'react-typical';
+import Typical from 'react-typed';
 
 function Home() {
   return (
